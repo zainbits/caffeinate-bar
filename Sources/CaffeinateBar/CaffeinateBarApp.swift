@@ -8,7 +8,7 @@ struct CaffeinateBarApp: App {
         MenuBarExtra {
             MenuContent(controller: controller)
         } label: {
-            Image(systemName: controller.mode.symbolName)
+            Image(nsImage: StatusIcon.image(for: controller.mode))
                 .accessibilityLabel("CaffeinateBar: \(controller.mode.title)")
         }
         .menuBarExtraStyle(.menu)

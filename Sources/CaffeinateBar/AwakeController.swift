@@ -18,14 +18,6 @@ enum AwakeMode: String, CaseIterable, Identifiable {
         }
     }
 
-    var symbolName: String {
-        switch self {
-        case .off: return "cup.and.saucer"
-        case .system: return "cup.and.saucer.fill"
-        case .systemAndDisplay: return "cup.and.heat.waves.fill"
-        }
-    }
-
     /// The IOKit power assertions `caffeinate` creates for the matching flags.
     fileprivate var assertionTypes: [String] {
         switch self {
