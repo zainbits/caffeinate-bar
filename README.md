@@ -31,7 +31,7 @@ pmset -g assertions | grep CaffeinateBar
 ## Build and install
 
 ```sh
-./scripts/build-app.sh            # builds build/CaffeinateBar.app
+./scripts/build-app.sh            # builds build.noindex/CaffeinateBar.app
 ./scripts/build-app.sh --install  # also copies it to /Applications and launches it
 ```
 

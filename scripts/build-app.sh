@@ -6,7 +6,8 @@ cd "$(dirname "$0")/.."
 
 APP_NAME="CaffeinateBar"
 MIN_MACOS="14.0"
-BUILD_DIR="build"
+# The .noindex suffix keeps Spotlight from listing this copy next to the installed app.
+BUILD_DIR="build.noindex"
 APP_DIR="$BUILD_DIR/${APP_NAME}.app"
 SOURCES=(Sources/CaffeinateBar/*.swift)
 
